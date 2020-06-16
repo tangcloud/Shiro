@@ -17,7 +17,6 @@ public class IndexController {
         return "shiro";
     }
 
-
     @RequestMapping("/toLogin")
     public String toLogin(){
         return "login";
