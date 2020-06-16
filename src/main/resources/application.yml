@@ -1,0 +1,20 @@
+server:
+  port: 8082
+
+#mysql驱动包
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://108.61.127.118:3306/shiro?characterEncoding=utf-8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&useSSL=false
+      username: root
+      password: root
+
+#mybatis
+mybatis:
+  type-aliases-package: com.tangcloud.**.domain
+  mapper-locations: classpath*:mapper/**/*Mapper.xml
+
+
+
