@@ -5,4 +5,6 @@ import com.tangcloud.shiro.domain.User;
 public interface UserMapper {
 
     User selectUser(User user);
+
+    User selectById(int id);
 }

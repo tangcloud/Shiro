@@ -12,9 +12,9 @@ spring:
       password: root
 
 #mybatis
-mybatis:
-  type-aliases-package: com.tangcloud.**.domain
-  mapper-locations: classpath*:mapper/**/*Mapper.xml
+#mybatis:
+#  type-aliases-package: com.tangcloud.**.domain
+#  mapper-locations: classpath*:mapper/**/*.xml
 
 
 

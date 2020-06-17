@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Hello Shiro</title>
 </head>
 <body>
-    <h3>你好</h3>
+    <h3>你好</h3><br/>
+    <div shiro:hasPermission="user:add">
+        <a href="/add">用户新增</a>
+    </div>
+    <div shiro:hasPermission="user:edit">
+        <a href="/edit">用户修改</a>
+    </div>
+
 </body>
 </html>

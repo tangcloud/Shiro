@@ -15,4 +15,8 @@
         username = #{userName}
     </select>
 
+    <select id="selectById" parameterType="int" resultMap="userResult">
+        select * from t_user where id = #{id}
+    </select>
+
 </mapper>
